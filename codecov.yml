@@ -1,0 +1,14 @@
+coverage:
+  status:
+    project:
+      default:
+        threshold: 80 # 전체 커버리지 임계값 (예: 80%)
+    patch:
+      default:
+        threshold: 70 # 변경된 코드의 커버리지 임계값 (예: 70%)
+
+comment:
+  layout: "header, diff, files" # PR 코멘트의 레이아웃
+  behavior: "default" # 모든 PR에 코멘트 표시
+  require_changes: false # 커버리지 변화가 없어도 코멘트 추가
+  markdown: true # Markdown 형식 활성화
